@@ -102,13 +102,22 @@ body{
     cursor: pointer;
     outline: none;
 }
-.chat-screen .messages{
+/* .chat-screen .messages{
     width: 100%;
     height: calc(100% - 100px);
     background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
     background-size: 600% 100%;
     animation: gradient 16s linear infinite;
     animation-direction: alternate;
+    overflow: auto;
+} */
+.chat-screen .messages {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-image: url('https://picsum.photos/1080/1920?random=1'); /* Replace with your image path */
+    background-size: cover; /* Adjust to your needs (cover, contain, etc.) */
+    background-repeat: no-repeat;
+    background-position: center;
     overflow: auto;
 }
 @keyframes gradient {
